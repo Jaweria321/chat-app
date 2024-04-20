@@ -5,7 +5,7 @@ function Chat() {
     const messages = [
         {
             id: 1,
-            avatar:'images/avatar-2.png', 
+            avatar:'images/profile-2.png', 
             contactTitle:'Sophie Okonedo',
             message:'John contacted you with Sophie Okenodo',
             imageMessage: '',
@@ -16,7 +16,7 @@ function Chat() {
         },
         {
             id: 2,
-            avatar:'images/profile-2.png', 
+            avatar:'images/profile-1.png', 
             contactTitle:'Sophie Okonedo',
             message:'Hi Alex! Have you heard about the upcoming virtual UX design event next month?',
             imageMessage: '',
@@ -27,7 +27,7 @@ function Chat() {
         },
         {
             id: 3,
-            avatar:'images/profile-2.png', 
+            avatar:'images/profile-3.png', 
             contactTitle:'You',
             message:'Hey Ali! Yes, I got tickets. Super excited! 🎶',
             imageMessage: '',
@@ -38,7 +38,7 @@ function Chat() {
         },
         {
             id: 4,
-            avatar:'images/profile-2.png', 
+            avatar:'images/profile-1.png', 
             contactTitle:'Sophie Okonedo',
             message:'Hey Samir! Are you going to the concert tomorrow night?',
             imageMessage: '',
@@ -49,7 +49,7 @@ function Chat() {
         },
         {
             id: 5,
-            avatar:'images/profile-2.png', 
+            avatar:'images/profile-3.png', 
             contactTitle:'You',
             message:'Hey Sophie! Yes, I got tickets. Super excited! 🎶',
             imageMessage: 'images/chat-img.png',

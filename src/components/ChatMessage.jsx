@@ -2,9 +2,9 @@ import React from 'react'
 
 function ChatMessage({avatar, contactTitle, message, imageMessage, isSender, emoji, time}) {
   return (
-    <div className='flex gap-x-2' dir={isSender ? 'rtl' : 'ltr'}>
+    <div className='flex gap-x-2 group mb-8' dir={isSender ? 'rtl' : 'ltr'}>
         <div>
-          <img src={Image} alt="" className="rounded-full w-9 h-9" />
+          <img src={avatar} alt="" className="rounded-full w-9 h-9" />
         </div>
         <div>
           <p className='flex text-sm'>
@@ -13,13 +13,13 @@ function ChatMessage({avatar, contactTitle, message, imageMessage, isSender, emo
           </p>
           <div className='flex items-center'>
             <div>
-              { imageMessage ? <img src="images/chat-img.png" alt="" className='mb-1' /> :
+              { imageMessage ? <img src={imageMessage} alt="" className='mb-1' /> :
                <p className='max-w-[456px] bg-[#DFE2E8] py-1 px-3 rounded-lg rounded-ss-sm relative'>
                 {message}
                 <span className='absolute end-4 bottom-[-20px] p-1 rounded-full bg-white'>{emoji}</span>
               </p> }
             </div>
-            <ul className='flex items-center gap-2'>
+            <ul className=' items-center gap-2 hidden	group-hover:flex'>
               <li>
                 <a href="#">
                   <img src="images/emoji.png" alt="" />

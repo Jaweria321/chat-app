@@ -106,7 +106,7 @@ function ChatList() {
 
   return (
     <div>
-        <div className='flex'>
+        <div className='flex justify-between items-center'>
             <h3>Chat</h3>
             <img src="images/dots.png" alt="" />
         </div>
