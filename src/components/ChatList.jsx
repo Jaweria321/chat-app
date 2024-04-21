@@ -105,13 +105,23 @@ function ChatList() {
     ]
 
   return (
-    <div>
-        <div className='flex justify-between items-center'>
-            <h3>Chat</h3>
+    <div className='flex-none w-[360px] overflow-y-scroll h-full'>
+        <div className='flex justify-between items-center p-4'>
+            <h3 className='text-2xl	font-extrabold	'>Chat</h3>
             <img src="images/dots.png" alt="" />
         </div>
         <div>
-            <h3 className='text-lg font-extrabold text-black'>Queued</h3>
+            <form action="">
+                <div className='p-2 relative'>
+                    <input type="text" placeholder='Search Messages' className='leading-[40px] w-full bg-[#F0F2F6] ps-[28px] rounded-lg' />
+                    <img src="images/search.png" alt="" className='w-[14px] h-[14px] absolute top-2/4 left-[14px] translate-y-[-50%]' />
+                </div>
+                
+
+            </form>
+        </div>
+        <div className='pb-2'>
+            <h3 className='text-lg font-extrabold text-black p-4'>Queued</h3>
             { 
                 chatListItemsQueued.map( (chatListItem) => 
                     < ChatListItem 
@@ -129,7 +139,7 @@ function ChatList() {
                 )
             }
             
-            <h3 className='text-lg font-extrabold text-black'>Chats</h3>
+            <h3 className='text-lg font-extrabold text-black p-4'>Chats</h3>
             { 
                 chatListItems.map( (chatListItem) => 
                     < ChatListItem 

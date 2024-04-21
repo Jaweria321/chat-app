@@ -70,7 +70,23 @@ function Chat() {
         }
     ]
   return (
-    <div className=''>
+    <div className='flex flex-col border border-[#DFE2E8]'>
+        <div className='flex justify-between p-4 border-b border-[#DFE2E8]'>
+            <div className='flex gap-3 justify-center items-center'>
+                <img src="images/chat-avatar.png" alt="" />
+                <p className='text-sm font-extrabold me-2 text-[#344054]'>Sophie Okonedo</p>
+                <a href="" class="rounded-full bg-[#F0F2F6] w-6 h-6 flex justify-center items-center">
+                    <img src="images/heart.png" alt="" class="w-auto" />
+                </a>
+            </div>
+            <ul className='flex gap-4 justify-between items-center'>
+                <li><img src="images/phone-call.png" alt="" /></li>
+                <li><img src="images/video.png" alt="" /></li>
+                <li><img src="images/more-vertical-orange.png" alt="" /></li>
+                <li><img src="images/info.png" alt="" /></li>
+            </ul>
+        </div>
+        <div className='flex-auto h-full overflow-y-scroll p-4'>
         {
             messages.map(message => 
                 <ChatMessage 
@@ -83,8 +99,10 @@ function Chat() {
                 emoji={message.emoji} 
                 time={message.time} />)
         }
-        
+
+        </div>
     </div>
+
   )
 }
 

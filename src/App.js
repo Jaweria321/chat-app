@@ -6,37 +6,20 @@ import ChatMessage from './components/ChatMessage';
 import Header from './components/Header';
 import SideBar from './components/SideBar';
 import UserDetailComponent from './components/UserDetailComponent';
-import UserProfileCard from './components/UserProfileCard';
-import UserProfileDetail from './components/UserProfileDetail';
 function App() {
   return (
-      <div className='font-avenir'>
+      <div className='font-avenir h-screen overflow-hidden'>
         <header>
           <Header />
         </header>
-        <main className='flex'>
-          <div>
+        <main className='flex h-full'>
           <SideBar />
-          </div>
-          <div className="">
           <ChatList />
-          </div>
-          <div className='flex'>
+          <div className='flex flex-auto h-full'>
             <Chat />
             <UserDetailComponent />
           </div>
         </main>
-        
-
-        {/* <UserProfileDetail />
-        <Header />
-        <UserProfileCard />
-        <div style={{height: '200px'}}></div>
-        <ChatMessage />
-        <SideBar />
-        <ChatListItem />
-        <ChatList /> */}
-
       </div>
   );
 }

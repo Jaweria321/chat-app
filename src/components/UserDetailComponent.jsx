@@ -4,7 +4,7 @@ import UserProfileDetail from './UserProfileDetail'
 
 function UserDetailComponent() {
   return (
-    <div className='flex-[360px_1_0%]'>
+    <div className='w-[360px] flex-none h-full overflow-y-scroll'>
         <UserProfileCard />
         <UserProfileDetail />
     </div>
