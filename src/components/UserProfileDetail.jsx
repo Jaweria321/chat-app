@@ -35,8 +35,8 @@ function UserProfileDetail() {
 
   return (
     <>
-      <div className=' border-x border-[#DFE2E8]'>
-        <button className="flex" onClick={() => setIsActive(!isActive)}>
+      <div className=' px-5 border-y border-[#DFE2E8]'>
+        <button className="flex  py-4" onClick={() => setIsActive(!isActive)}>
           <div className= {isActive ? "text-[#F36531]" : "text-[#202223]"}>
             <p className='text-base font-medium'>User Detail</p>
           </div>
@@ -58,8 +58,8 @@ function Tags() {
 
   return (
     <>
-      <div className=''>
-        <button className="flex" onClick={() => setIsTagActive(!isTagActive)}>
+      <div className='w-full  border-y border-[#DFE2E8]'>
+        <button className="flex px-5  py-4 w-full" onClick={() => setIsTagActive(!isTagActive)}>
           <div className= {isTagActive ? "text-[#F36531]" : "text-[#202223]"}>
             <p className='text-base font-medium'>Tags (5)</p>
           </div>
@@ -67,7 +67,7 @@ function Tags() {
             <img src={isTagActive ? "images/arrow-up.png" : "images/arrow-down.png"} alt="" />
           </div>
         </button>
-        <div>
+        <div className='px-5'>
         {isTagActive && <div>Tags here</div> }
         </div>
       </div>

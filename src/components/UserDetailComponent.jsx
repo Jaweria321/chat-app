@@ -13,6 +13,14 @@ function UserDetailComponent() {
         <div className='h-full overflow-y-scroll'>
           <UserProfileDetail />
         </div>
+        <div className='bg-[#B5B8BE] p-4'>
+          <form action="">
+            <div className='bg-white w-full'>
+              <label htmlFor="" className=''>Notes</label>
+              <input type="text" />
+            </div>
+          </form>
+        </div>
     </div>
   )
 }
