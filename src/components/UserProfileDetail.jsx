@@ -34,19 +34,44 @@ function UserProfileDetail() {
 ]
 
   return (
-    <div className=''>
-      <button className="flex" onClick={() => setIsActive(!isActive)}>
-        <div className= {isActive ? "text-[#F36531]" : "text-[#202223]"}>
-          <p className='text-base font-medium'>User Detail</p>
-        </div>
+    <>
+      <div className=' border-x border-[#DFE2E8]'>
+        <button className="flex" onClick={() => setIsActive(!isActive)}>
+          <div className= {isActive ? "text-[#F36531]" : "text-[#202223]"}>
+            <p className='text-base font-medium'>User Detail</p>
+          </div>
+          <div>
+            <img src={isActive ? "images/arrow-up.png" : "images/arrow-down.png"} alt="" />
+          </div>
+        </button>
         <div>
-          <img src={isActive ? "images/arrow-up.png" : "images/arrow-down.png"} alt="" />
+          {isActive && userDetailContent.map((detail) => <UserDetailContent title={detail.title} description={detail.description}  />)}
         </div>
-      </button>
-      <div>
-        {isActive && userDetailContent.map((detail) => <UserDetailContent title={detail.title} description={detail.description}  />)}
       </div>
-    </div>
+      <Tags />
+      </>
+  );
+}
+
+function Tags() {
+  const [isTagActive, setIsTagActive] = useState(false);
+
+  return (
+    <>
+      <div className=''>
+        <button className="flex" onClick={() => setIsTagActive(!isTagActive)}>
+          <div className= {isTagActive ? "text-[#F36531]" : "text-[#202223]"}>
+            <p className='text-base font-medium'>Tags (5)</p>
+          </div>
+          <div>
+            <img src={isTagActive ? "images/arrow-up.png" : "images/arrow-down.png"} alt="" />
+          </div>
+        </button>
+        <div>
+        {isTagActive && <div>Tags here</div> }
+        </div>
+      </div>
+    </>
   );
 }
 

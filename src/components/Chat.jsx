@@ -101,6 +101,69 @@ function Chat() {
         }
 
         </div>
+        <div className='top-[-55px] relative bg-white'>
+            <form action="">
+                <input type="text" 
+                placeholder='Message to Sophie | Away for one hour' 
+                className='w-full leading-[48px]  text-[#B5B8BE] text-xs font-medium px-4' />
+            </form>
+            <div className='flex justify-between items-center px-4'>
+                <ul className='flex justify-center items-center gap-1 py-1'>
+                    <li>
+                        <a href="">
+                            <img src="images/chat-input-1.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/chat-input-2.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/chat-input-3.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/chat-input-4.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/chat-input-5.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/chat-input-6.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/chat-input-7.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/chat-input-8.png" alt="" />
+                        </a>
+                    </li>
+                </ul>
+                <ul className='flex justify-center items-center gap-1 py-1'>
+                    <li>
+                        <a href="">
+                            <img src="images/share-card.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/plus-circle.png" alt="" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
   )
