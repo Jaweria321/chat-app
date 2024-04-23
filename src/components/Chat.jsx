@@ -1,7 +1,7 @@
 import React from 'react'
 import ChatMessage from './ChatMessage'
 
-function Chat() {
+function Chat(props) {
     const messages = [
         {
             id: 1,
@@ -70,7 +70,7 @@ function Chat() {
         }
     ]
   return (
-    <div className='flex flex-col border border-[#DFE2E8]'>
+    <div className='flex flex-col flex-auto border border-[#DFE2E8]'>
         <div className='flex justify-between p-4 border-b border-[#DFE2E8]'>
             <div className='flex gap-3 justify-center items-center'>
                 <img src="images/chat-avatar.png" alt="" />

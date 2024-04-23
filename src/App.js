@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import Chat from './components/Chat';
 import ChatList from './components/ChatList';
@@ -15,7 +16,7 @@ function App() {
         <main className='flex h-full'>
           <SideBar />
           <ChatList />
-          <div className='flex flex-auto h-full'>
+          <div className='flex flex-auto h-full justify-between'>
             <Chat />
             <UserDetailComponent />
           </div>

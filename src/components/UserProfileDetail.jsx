@@ -36,7 +36,7 @@ function UserProfileDetail() {
   return (
     <>
       <div className=' px-5 border-y border-[#DFE2E8]'>
-        <button className="flex  py-4" onClick={() => setIsActive(!isActive)}>
+        <button className="flex py-4" onClick={() => setIsActive(!isActive)}>
           <div className= {isActive ? "text-[#F36531]" : "text-[#202223]"}>
             <p className='text-base font-medium'>User Detail</p>
           </div>

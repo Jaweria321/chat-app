@@ -12,7 +12,7 @@ function ChatMessage({avatar, contactTitle, message, imageMessage, isSender, emo
               <span className='font-normal' dir='ltr'>{time}</span>
           </p>
           <div className='flex items-center'>
-            <div className='max-w-[456px] flex-none'>
+            <div className='max-w-[456px] flex-none max-[1399px]:max-w-[370px]'>
               { imageMessage && <img src={imageMessage} alt="" className='mb-1' /> }
                <p  dir='ltr' className='max-w-[446px] bg-[#DFE2E8] py-1 px-3 rounded-lg rounded-ss-sm relative'>
                 {message}

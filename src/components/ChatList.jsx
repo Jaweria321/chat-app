@@ -124,7 +124,7 @@ function ChatList() {
             <h3 className='text-lg font-extrabold text-black p-4'>Queued</h3>
             { 
                 chatListItemsQueued.map( (chatListItem) => 
-                    < ChatListItem 
+                    <ChatListItem 
                     key = {chatListItem.id} 
                     image = {chatListItem.image }
                     chatTitle = {chatListItem.chatTitle}
@@ -142,7 +142,7 @@ function ChatList() {
             <h3 className='text-lg font-extrabold text-black p-4'>Chats</h3>
             { 
                 chatListItems.map( (chatListItem) => 
-                    < ChatListItem 
+                    <ChatListItem 
                     key = {chatListItem.id} 
                     image = {chatListItem.image }
                     chatTitle = {chatListItem.chatTitle}
